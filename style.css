@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 .img {
     background-color: hsl(277, 95%, 24%);
@@ -48,34 +48,39 @@ img {
 }
 @media only screen and (min-width: 1024px) {
     .container {
+        max-width: 1140px;
         display: flex;
         flex-direction: row-reverse;
     }
     img {
         height: 100%;
+        border-radius: 0 10px 10px 0;
     }
+    
     .text {
         padding: 70px 80px 70px 70px;
-        width: 50%;
+        width: 40%;
     }
     .text .title {
-        font-size: 25px;
+        font-size: 37px;
     }
     .text .description {
-        font-size: 12px;
+        font-size: 17px;
     }
     .text .title, .text .description {
         text-align: left;
     }
     .stat {
         display: flex;
-        justify-content: space-between;
+        margin-right: 50px;
     }
     .stat .number {
         font-size: 20px;
         font-weight: 700;
+        padding-right: 90px;
     }
     .stat .name {
         font-size: 10px;
+        padding-right: 90px;
     }
 }
